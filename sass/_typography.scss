@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'F37Ginger';
+  src:  url("../fonts/F37Ginger-Regular.otf") format("opentype"),
+        url("../fonts/F37Ginger-Light.otf") format("opentype"),
+        url("../fonts/F37Ginger-Bold.otf") format("opentype"),
+}
+
+p,
+small,
+label,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1;
+  font-weight: bold;
+  color:$default;
+  padding-bottom: 16px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4A4A4A;
+    padding-bottom: 16px;
+  }
+  
+small {
+    font-size: 14px;
+    font-weight: lighter;
+    color: #4A4A4A;
+  }
+
+label {
+    font-size: 14px;
+    font-weight: normal;
+    color: $default;
+}
+
+
+
+

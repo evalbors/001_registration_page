@@ -1,0 +1,71 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login goodfood</title>
+    <link rel="stylesheet" href="sass/app.css" />
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header>
+        <div>
+            <img src="img/logo_goodfood.svg" alt="goodfood logo" />
+        </div>
+    </header>
+
+    <main>
+      <div class="login">
+        <div class="">
+            <div class="intro">
+            <h1>Hello!</h1>
+            <p>Sign in to your account.</p>
+            <div class="flex">
+                <button class="social-media">
+                <div class="flex">
+                    <i><img src="img/Facebook.svg" alt="facebook icon" /></i>
+                    <small>Continued with Facebook</small>
+                </div>
+                </button>
+                <button class="social-media">
+                <div class="flex">
+                    <i><img src="img/Google.svg" alt="google icon" /></i>
+                    <small>Continued with Google</small>
+                </div>
+                </button>
+            </div>
+            </div>
+            <form id="form" action="/" method="GET">
+                <p>Or use your email:</p>
+                <div class="form-group">
+                    <label class="tag" for="email">E-mail</label><span id="error-mail"></span>
+                    <input type="email" name="email" class="form-control" placeholder="name@mail.com" >
+                </div>
+                <div class="form-group">
+                    <label class="tag" for="password">Password</label><span id="error-password"></span>
+                    <input type="text" name="password" class="form-control" placeholder="Enter your password" >
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" class="check" name="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me.</label>
+                </div>
+                
+                <div class="flex">
+                    <button class="cta" type="submit" >Log in</button>
+                    <a>Forgot password</a>
+                </div>
+            </form>
+        </div>
+      </div>
+      <div class="signin">
+        <div class="">
+            <h1>Create <span>free</span>  <br />your account</h1>
+            <p>Join our community, stay informed and receive discounts.</p>
+            <img src="img/ilustration_login.svg" alt="">
+            <div class="flex">
+                <button class="cta" type="submit">Sign in</button>
+            </div>        
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
