@@ -1,17 +1,13 @@
-@media only screen and (max-width: 600px) {
-    main {
-        .login {
-            padding-top: 40px;
-            width: 100%;
-            position: absolute;
-    
-        }
-        .sign {
-            padding-top: 40px;
-            width: 100%;
-            position: absolute;
-        }
-    }
-    
+/* TABLET */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+  
+/* MOBILE */
 
+@media only screen and (max-width: 599px) {
+  .intro {
+    .flex {
+      flex-direction: column;
+    }
+  }
 }

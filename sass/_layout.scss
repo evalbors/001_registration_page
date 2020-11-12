@@ -10,30 +10,25 @@ header {
 }
 
 .login {
-    padding-top: 72px;
-    height: 100%;
-    width: 50%;
+    padding-top: 64px;
+    height: 100vh;
+    width: 100%;
     z-index: 1;
-    position: fixed;
-    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .signin {
-    padding-top: 72px;
-    right:0;
-    height: 100%;
-    width: 50%;
+    padding-top: 64px;
+    height: 100vh;
+    width: 100%;
     z-index: 0;
-    position: fixed;
     display: flex;
-    background-color: $background;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    background-color: $background;
+
     img {
         padding: 32px 0;
         width: 360px;

@@ -176,19 +176,6 @@ a:hover {
   background-color: #5BE472;
 }
 
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: #4A4A4A;
-  border: 1px solid #E6E6E6;
-  padding: 16px 16px;
-  margin: 8px 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-weight: 300;
-}
-
 ::-webkit-input-placeholder {
   color: #E6E6E6;
 }
@@ -217,7 +204,7 @@ input:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .form-group .tag {
@@ -225,6 +212,59 @@ input:focus {
   color: #929292;
   letter-spacing: 1;
   text-transform: uppercase;
+}
+
+.form-group input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  color: #4A4A4A;
+  border: 1px solid #E6E6E6;
+  padding: 16px 16px;
+  margin: 8px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: 300;
+}
+
+.form-group input:focus {
+  border: 1px solid #03ABE1;
+}
+
+.form-group .validation {
+  visibility: visible;
+}
+
+.form-group .validation i {
+  position: relative;
+  top: -42px;
+  float: right;
+  padding-left: 16px;
+  right: 16px;
+}
+
+.form-group .error {
+  border-color: #dc3545;
+}
+
+.form-group .error small {
+  color: #dc3545;
+}
+
+.form-group .success {
+  border-color: #5BE472;
+}
+
+.form-group .success small {
+  color: #5BE472;
+}
+
+.form-group .fa-check-circle {
+  color: #5BE472;
+}
+
+.form-group .fa-exclamation-circle {
+  color: #dc3545;
 }
 
 .checkbox {
@@ -300,12 +340,10 @@ header {
 }
 
 .login {
-  padding-top: 72px;
-  height: 100%;
-  width: 50%;
+  padding-top: 64px;
+  height: 100vh;
+  width: 100%;
   z-index: 1;
-  position: fixed;
-  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -318,24 +356,20 @@ header {
 }
 
 .signin {
-  padding-top: 72px;
-  right: 0;
-  height: 100%;
-  width: 50%;
+  padding-top: 64px;
+  height: 100vh;
+  width: 100%;
   z-index: 0;
-  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #F8F8F8;
-  overflow-x: hidden;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F8F8F8;
 }
 
 .signin img {
@@ -361,16 +395,14 @@ header {
   margin-bottom: 40px;
 }
 
-@media only screen and (max-width: 600px) {
-  main .login {
-    padding-top: 40px;
-    width: 100%;
-    position: absolute;
-  }
-  main .sign {
-    padding-top: 40px;
-    width: 100%;
-    position: absolute;
+/* TABLET */
+/* MOBILE */
+@media only screen and (max-width: 599px) {
+  .intro .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=app.css.map */

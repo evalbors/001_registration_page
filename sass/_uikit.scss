@@ -10,27 +10,27 @@ a:hover {
 }
 
 .cta {
-    padding: 16px;
-    width: 292px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    background-color: $primary;
-    color: white;
-    border:none;
-    margin-right: 32px;
+  padding: 16px;
+  width: 292px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: $primary;
+  color: white;
+  border: none;
+  margin-right: 32px;
+  margin-top: 32px;
+
+  a {
+    text-decoration: none;
+    color: $primary;
     margin-top: 32px;
+    text-align: center;
+  }
 
-    a {
-      text-decoration: none;
-      color: $primary;
-      margin-top: 32px;
-      text-align: center;
-    }
-
-    a:hover {
-      color: white;
-      background-color: $success;
-    }
+  a:hover {
+    color: white;
+    background-color: $success;
+  }
 }
 
 .cta:hover {
@@ -38,33 +38,33 @@ a:hover {
 }
 
 .social-media {
-    padding: 16px 32px;
+  padding: 16px 32px;
+  transition-duration: 0.4s;
+  border-radius: 40px;
+  border: 1px solid $secondary;
+  cursor: pointer;
+  background-color: none;
+  color: $default;
+  display: flex;
+  justify-content: center;
+  margin-right: 16px;
+  i {
+    padding-right: 16px;
+  }
+  small {
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
     transition-duration: 0.4s;
-    border-radius: 40px;
-    border: 1px solid $secondary;
-    cursor: pointer;
-    background-color: none;
-    color: $default;
-    display: flex;
-    justify-content: center;
-    margin-right: 16px;
-    i{
-        padding-right: 16px;
-    }
-    small {
-        padding: 0;
-        margin: 0;
-        font-weight: 300;
-        transition-duration: 0.4s;
-    }
+  }
 }
 
-.social-media:hover{
+.social-media:hover {
   background-color: $background;
   small {
     color: $default;
   }
-  border: 1px solid $background; 
+  border: 1px solid $background;
 }
 
 a {
@@ -79,37 +79,74 @@ a:hover {
   background-color: $success;
 }
 
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  color: $default;
-  border: 1px solid $soft;
-  padding: 16px 16px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  font-weight: 300;
-}
-
 ::placeholder {
   color: $soft;
 }
 
-input:focus{
+input:focus {
   border: 1px solid $primary;
-}  
-  
+}
+
 .form-group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 24px;
-    
-    .tag {
-      font-weight: bold;
-      color: $secondary;
-      letter-spacing: 1;
-      text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+
+  .tag {
+    font-weight: bold;
+    color: $secondary;
+    letter-spacing: 1;
+    text-transform: uppercase;
+  }
+
+  input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: $default;
+    border: 1px solid $soft;
+    padding: 16px 16px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-weight: 300;
+  }
+
+  input:focus{
+    border: 1px solid $primary;
+  }
+
+  .validation {
+    visibility: visible;
+    i {
+      position: relative;
+      top: -42px;
+      float: right;
+      padding-left: 16px;
+      right: 16px;
     }
+  }
+
+  .error {
+    border-color: $error;
+    small {
+      color: $error;
+    }
+  }
+
+  .success {
+    border-color: $success;
+    small {
+      color: $success;
+    }
+  }
+
+  .fa-check-circle {
+    color: $success;
+  }
+
+  .fa-exclamation-circle {
+    color: $error;
+  }
 }
 
 .checkbox {
@@ -122,16 +159,15 @@ input:focus{
     margin-right: 8px;
     padding: 8px 8px;
   }
-  
+
   input:checked {
     border: 1px solid $primary;
     background-color: $primary;
   }
 
-  input:hover{
+  input:hover {
     border: 1px solid $success;
   }
-
 }
 
 .check {
@@ -140,7 +176,7 @@ input:focus{
   display: block;
   width: 22px;
   height: 22px;
-  transform: scale(var(--ggs,1));
+  transform: scale(var(--ggs, 1));
   color: white;
 }
 
@@ -156,7 +192,5 @@ input:focus{
   border-width: 0 2px 2px 0;
   border-style: solid;
   transform-origin: bottom left;
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
-
-

@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'F37Ginger', sans-serif;
+    src:  url("/fonts/F37Ginger-Regular.otf") format("opentype"),
+          url("/fonts/F37Ginger-Light.otf") format("opentype"),
+          url("/fonts/F37Ginger-Bold.otf") format("opentype"),
+  }
+
+body {
+  background-image: linear-gradient(to bottom right, #03ABE1, #08bba9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family:'F37Ginger', sans-serif;
+}
+
+.container {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 500px ;
+  max-width: 100%;
+}
+
+.header {
+    background-color: #f8f8f8;
+    border-radius: 4px 4px 0 0 ;
+    border-bottom: 1px solid #cbc8c8;
+    padding: 20px 40px
+}
+
+.header h1 {
+    margin:0 ;
+}
+
+form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.form-control input {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+.form-control .success input {
+    border-color: #2ecc71;
+}
+
+.form-control .error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    position: absolute;
+    top: 36px;
+    right: 10px;
+    visibility: hidden;
+}
+
+.form-control .success i .fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control .error i .fa-exclamation-circle {
+    color: #e73c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: relative;
+    left: 0;
+    margin-top: 20px;
+}
+
+.form-control .error small {
+    color: #e73c3c;
+    visibility: visible;
+}
+
+.form button {
+    background-color: #08bba9;
+    color: #fff;
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    padding: 10px;
+    border: 2px solid #08bba9;
+    font-size: 16px;
+    font-weight: bold;
+
+}
