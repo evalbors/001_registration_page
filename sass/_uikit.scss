@@ -194,3 +194,7 @@ input:focus {
   transform-origin: bottom left;
   transform: rotate(45deg);
 }
+
+#error-message{
+  color: $error
+}

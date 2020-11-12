@@ -322,6 +322,10 @@ input:focus {
           transform: rotate(45deg);
 }
 
+#error-message {
+  color: #dc3545;
+}
+
 header {
   z-index: 1;
   position: fixed;

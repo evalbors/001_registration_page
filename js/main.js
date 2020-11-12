@@ -11,7 +11,7 @@ form.addEventListener("submit", (e) => {
   checkInputs();
 
   ValidateEmail();
-  ValidatePassword();
+  ValidatePassword();   
   
 });
 
@@ -64,13 +64,13 @@ function setErrorFor(input, message) {
 function ValidateEmail(input) {
   var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
   if (input.value.match(mailformat)) {
-    document.getElementById('message-mail').textContent ='Check that the format of your email is correct';
+    document.getElementById('error-message').textContent ='Check that the format of your email is correct';
   }
 }
 
 function ValidatePassword(input) {
     var passwordformat = input.length;
     if (passwordformat < 6 && passwordformat >8) {
-      document.getElementById('message-password').textContent ='Password must contain more than 6 caracters and less than 8.';
+      document.getElementById('error-message').textContent ='Password must contain more than 6 caracters and less than 8.';
     }
 }
