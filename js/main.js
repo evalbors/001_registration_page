@@ -30,13 +30,13 @@ function checkInputs() {
   if (passwordValue === "") {
     // show error
     // add error class
-    setErrorFor(email, "Email cannot be blank");
+    setErrorFor(password, "Email cannot be blank");
   }
 
   if (passwordValue != "") {
     // add success class
     // here, we cannot a message, just add success style class
-    setSuccessFor(email);
+    setSuccessFor(password);
   }
 }
 
@@ -54,17 +54,17 @@ function setErrorFor(input, message) {
 
 
 
+  // MAIL AND PASSWORD FORMAT
 
-
-function ValidateEmail(inputText) {
+function ValidateEmail(input) {
   var mailformat = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-  if (inputText.value.match(mailformat)) {
+  if (input.value.match(mailformat)) {
     document.getElementById('message-mail').textContent ='Check that the format of your email is correct';
   }
 }
 
-function ValidatePassword(inputText) {
-    var passwordformat = inputText.length;
+function ValidatePassword(input) {
+    var passwordformat = input.length;
     if (passwordformat < 6 && passwordformat >8) {
       document.getElementById('message-password').textContent ='Password must contain more than 6 caracters and less than 8.';
     }
