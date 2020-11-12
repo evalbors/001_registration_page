@@ -4,10 +4,15 @@ const password = document.getElementById("password");
 const errorElement = document.getElementById("error");
 const successElement = document.getElementById("success");
 
+// Prevent form would be sended?
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkInputs();
+
+  ValidateEmail();
+  ValidatePassword();
+  
 });
 
 function checkInputs() {
