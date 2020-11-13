@@ -50,6 +50,7 @@ a:hover {
   margin-right: 16px;
   i {
     padding-right: 16px;
+
   }
   small {
     padding: 0;
@@ -170,6 +171,11 @@ input:focus {
   }
 }
 
+.invalid input[text], .invalid input[email]  {
+  border: 1px solid $error;
+  color: $error;
+}
+
 .check {
   box-sizing: border-box;
   position: relative;
@@ -198,3 +204,4 @@ input:focus {
 #error-message{
   color: $error
 }
+

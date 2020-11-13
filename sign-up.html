@@ -35,26 +35,29 @@
                         </button>
                     </div>
                     </div>
-                    <form id="form" action="/" method="GET">
+
+
+                    <form id="form" action="#" novalidate>
                         <p>Or use your email:</p>
 
                         <div class="form-group">
                             <label class="tag" for="email">E-mail</label>
-                            <input type="email" name="email" id="email" class="form-control" placeholder="name@mail.com" >
-                            <span class="validation">
-                                <i class="fa fa-check-circle fa-sm"></i>
-                                <i class="fa fa-exclamation-circle fa-sm"></i> 
-                                <small id="error-message">Error message</small>
-                            </span>                      
+                            <input type="email" name="email" id="email" class="" placeholder="name@mail.com" >
+                            <!-- onkeydown="validation()" -->
+                            <div class="validation">
+                                <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
+                                <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i> 
+                                <span id="text"></span>  
+                            </div>                        
                         </div>
                         <div class="form-group">
-                            <label class="tag" for="password">Password</label><span id="error-password"></span>
-                            <input type="text" name="password" id="password" class="form-control" placeholder="Enter your password" >
-                            <span class="validation">
-                                <i class="fa fa-check-circle fa-sm"></i>
-                                <i class="fa fa-exclamation-circle fa-sm"></i> 
-                                <small id="error-message">Error message</small>
-                            </span>    
+                            <label class="tag" for="password">Password</label>
+                            <input type="text" name="password" id="password" class="" placeholder="Enter your password" >
+                            <div class="validation">
+                                <i id="success-icon-password" class="fa fa-check-circle fa-sm"></i>
+                                <i id="error-icon-password" class="fa fa-exclamation-circle fa-sm"></i> 
+                                <span id="text-password"></span>  
+                            </div>     
                         </div>
                         <div class="checkbox">
                             <input type="checkbox" class="check" name="remember-me" id="remember-me">
@@ -62,7 +65,7 @@
                         </div>
                         
                         <div class="flex">
-                            <button class="cta" type="submit">Log in</button>
+                            <button class="cta" onclick="validation()">Log in</button>
                             <a>Forgot password</a>
                         </div>
                     </form>
@@ -82,4 +85,7 @@
       
     </main>
   </body>
-</html>
+<!--   <script src="js/validation-form-inputs.js"></script>
+ -->  <script src="js/validation-form-submit.js"></script>
+
+  </html>
