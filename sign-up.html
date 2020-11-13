@@ -5,87 +5,161 @@
     <title>Login goodfood</title>
     <link rel="stylesheet" href="sass/app.css" />
     <!-- Font font-awesome library -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">  </head>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
   <body>
+    <div id="bg bg-black"></div>
     <header>
-        <div>
-            <img src="img/logo_goodfood.svg" alt="goodfood logo" />
-        </div>
+      <div>
+        <img src="img/logo_goodfood.svg" alt="goodfood logo" />
+      </div>
     </header>
+    <main>  
+      <div class="flex">
+        <div class="login">
+          <div class="">
+            <div class="intro">
+              <h1>Hello!</h1>
+              <p>Sign in to your account.</p>
+              <div class="flex">
+                <button class="social-media">
+                  <div class="flex">
+                    <i><img src="img/Facebook.svg" alt="facebook icon" /></i>
+                    <small>Continued with Facebook</small>
+                  </div>
+                </button>
+                <button class="social-media">
+                  <div class="flex">
+                    <i><img src="img/Google.svg" alt="google icon" /></i>
+                    <small>Continued with Google</small>
+                  </div>
+                </button>
+              </div>
+            </div>
 
-    <main>
-        <div class="flex">
-            <div class="login">
-                <div class="">
-                    <div class="intro">
-                    <h1>Hello!</h1>
-                    <p>Sign in to your account.</p>
-                    <div class="flex">
-                        <button class="social-media">
-                            <div class="flex">
-                                <i><img src="img/Facebook.svg" alt="facebook icon" /></i>
-                                <small>Continued with Facebook</small>
-                            </div>
-                        </button>
-                        <button class="social-media">
-                            <div class="flex">
-                                <i><img src="img/Google.svg" alt="google icon" /></i>
-                                <small>Continued with Google</small>
-                            </div>
-                        </button>
-                    </div>
-                    </div>
+            <form id="form" action="#" novalidate>
+              <p>Or use your email:</p>
 
-
-                    <form id="form" action="#" novalidate>
-                        <p>Or use your email:</p>
-
-                        <div class="form-group">
-                            <label class="tag" for="email">E-mail</label>
-                            <input type="email" name="email" id="email" class="" placeholder="name@mail.com" >
-                            <!-- onkeydown="validation()" -->
-                            <div class="validation">
-                                <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
-                                <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i> 
-                                <span id="text"></span>  
-                            </div>                        
-                        </div>
-                        <div class="form-group">
-                            <label class="tag" for="password">Password</label>
-                            <input type="text" name="password" id="password" class="" placeholder="Enter your password" >
-                            <div class="validation">
-                                <i id="success-icon-password" class="fa fa-check-circle fa-sm"></i>
-                                <i id="error-icon-password" class="fa fa-exclamation-circle fa-sm"></i> 
-                                <span id="text-password"></span>  
-                            </div>     
-                        </div>
-                        <div class="checkbox">
-                            <input type="checkbox" class="check" name="remember-me" id="remember-me">
-                            <label for="remember-me">Remember me.</label>
-                        </div>
-                        
-                        <div class="flex">
-                            <button class="cta" onclick="validation()">Log in</button>
-                            <a>Forgot password</a>
-                        </div>
-                    </form>
+              <div class="form-group">
+                <label class="tag" for="email">E-mail</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class=""
+                  placeholder="name@mail.com"
+                />
+                <!-- onkeydown="validation()" -->
+                <div class="validation">
+                  <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
+                  <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i>
+                  <span id="text"></span>
                 </div>
               </div>
-              <div class="signin">
-                <div class="">
-                    <h1>Create <span>free</span>  <br />your account</h1>
-                    <p>Join our community, stay informed and receive discounts.</p>
-                    <img src="img/ilustration_login.svg" alt="">
-                    <div class="flex">
-                        <button class="cta" type="submit">Sign in</button>
-                    </div>        
+              <div class="form-group">
+                <label class="tag" for="password">Password</label>
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  class=""
+                  placeholder="Enter your password"
+                />
+                <div class="validation">
+                  <i
+                    id="success-icon-password"
+                    class="fa fa-check-circle fa-sm"
+                  ></i>
+                  <i
+                    id="error-icon-password"
+                    class="fa fa-exclamation-circle fa-sm"
+                  ></i>
+                  <span id="text-password"></span>
                 </div>
               </div>
+              <div class="checkbox">
+                <input type="checkbox" class="" name="" id="checkbox-input" />
+                <label for="remember-me"
+                  >Acepto vender mi alma y un familiar.</label
+                >
+              </div>
+
+              <div class="flex">
+                <button class="cta" onclick="validation()">Log in</button>
+                <a href="#">Forgot password</a>
+              </div>
+            </form>
+          </div>
         </div>
-      
+        <div class="signin">
+          <div class="">
+            <h1>Create <span>free</span> <br />your account</h1>
+            <p>Join our community, stay informed and receive discounts.</p>
+            <img src="img/ilustration_login.svg" alt="" />
+            <div class="flex">
+                <button id="sign-in-button"class="cta" onclick="openModal()">Sign in</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+    <div class="modal">
+        <button type="button" id="button-close-modal" onclick="closeModal()">
+            <i class="fa fa-times fa-sm"></i>
+        </button>
+        
+        <div class="box">
+            <h1>Creating your account</h1>
+            <p>
+            Hi there! Add your e-mail and your password <br />to create your new
+            account
+            </p>
+            <div class="form-group">
+            <label class="tag" for="email">E-mail</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class=""
+                placeholder="name@mail.com"
+            />
+            <div class="validation">
+                <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
+                <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i>
+                <span id="text"></span>
+            </div>
+            </div>
+            <div class="form-group">
+            <label class="tag" for="password">Password</label>
+            <input
+                type="text"
+                name="password"
+                id="password"
+                class=""
+                placeholder="Enter your password"
+            />
+            <div class="validation">
+                <i
+                id="success-icon-password"
+                class="fa fa-check-circle fa-sm"
+                ></i>
+                <i
+                id="error-icon-password"
+                class="fa fa-exclamation-circle fa-sm"
+                ></i>
+                <span id="text-password"></span>
+            </div>
+            </div>
+            <button class="cta">Create</button>
+        </div>
+    </div>
   </body>
-<!--   <script src="js/validation-form-inputs.js"></script>
- -->  <script src="js/validation-form-submit.js"></script>
 
-  </html>
+    
+  <!--   <script src="js/validation-form-inputs.js"></script>
+ -->
+  <script src="js/validation-form-submit.js"></script>
+</html>
