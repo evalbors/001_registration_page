@@ -17,7 +17,7 @@
         <img src="img/logo_goodfood.svg" alt="goodfood logo" />
       </div>
     </header>
-    <main>  
+    <main>
       <div class="flex">
         <div class="login">
           <div class="">
@@ -39,7 +39,6 @@
                 </button>
               </div>
             </div>
-
             <form id="form" action="#" novalidate>
               <p>Or use your email:</p>
 
@@ -100,65 +99,63 @@
             <p>Join our community, stay informed and receive discounts.</p>
             <img src="img/ilustration_login.svg" alt="" />
             <div class="flex">
-                <button id="sign-in-button"class="cta" onclick="openModal()">Sign in</button>
+              <button id="sign-in-button" class="cta" onclick="openModal()">
+                Sign in
+              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
     <div class="modal">
-        <button type="button" id="button-close-modal" onclick="closeModal()">
-            <i class="fa fa-times fa-sm"></i>
-        </button>
-        
-        <div class="box">
-            <h1>Creating your account</h1>
-            <p>
-            Hi there! Add your e-mail and your password <br />to create your new
-            account
-            </p>
-            <div class="form-group">
-            <label class="tag" for="email">E-mail</label>
-            <input
-                type="email"
-                name="email"
-                id="email"
-                class=""
-                placeholder="name@mail.com"
-            />
-            <div class="validation">
-                <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
-                <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i>
-                <span id="text"></span>
-            </div>
-            </div>
-            <div class="form-group">
-            <label class="tag" for="password">Password</label>
-            <input
-                type="text"
-                name="password"
-                id="password"
-                class=""
-                placeholder="Enter your password"
-            />
-            <div class="validation">
-                <i
-                id="success-icon-password"
-                class="fa fa-check-circle fa-sm"
-                ></i>
-                <i
-                id="error-icon-password"
-                class="fa fa-exclamation-circle fa-sm"
-                ></i>
-                <span id="text-password"></span>
-            </div>
-            </div>
-            <button class="cta">Create</button>
+      <button type="button" id="button-close-modal" onclick="closeModal()">
+        <i class="fa fa-times fa-sm"></i>
+      </button>
+
+      <div class="box">
+        <h1>Creating your account</h1>
+        <p>
+          Hi there! Add your e-mail and your password <br />to create your new
+          account
+        </p>
+        <div class="form-group">
+          <label class="tag" for="email">E-mail</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class=""
+            placeholder="name@mail.com"
+          />
+          <div class="validation">
+            <i id="success-icon" class="fa fa-check-circle fa-sm"></i>
+            <i id="error-icon" class="fa fa-exclamation-circle fa-sm"></i>
+            <span id="text"></span>
+          </div>
         </div>
+        <div class="form-group">
+          <label class="tag" for="password">Password</label>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            class=""
+            placeholder="Enter your password"
+          />
+          <div class="validation">
+            <i id="success-icon-password" class="fa fa-check-circle fa-sm"></i>
+            <i
+              id="error-icon-password"
+              class="fa fa-exclamation-circle fa-sm"
+            ></i>
+            <span id="text-password"></span>
+          </div>
+        </div>
+        <button class="cta">Create</button>
+      </div>
     </div>
   </body>
 
-    
   <!--   <script src="js/validation-form-inputs.js"></script>
  -->
   <script src="js/validation-form-submit.js"></script>
